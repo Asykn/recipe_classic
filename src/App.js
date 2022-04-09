@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Recipe_Header from './components/Recipe_Header';
+import Recipe_Ingredients from './components/Recipe_Ingredients';
+import Recipe_Servings from './components/Recipe_Servings';
+import Recipe_Instructions from './components/Recipe_Instructions';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="container1">
+        <Recipe_Header />
+        <div className="containersec">
+          <Recipe_Ingredients />
+          <Recipe_Servings /> 
+        </div>
+        <div className="container3">
+          <Recipe_Instructions />
+        </div>
+      </div>
   );
 }
 
