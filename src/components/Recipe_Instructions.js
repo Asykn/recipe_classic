@@ -3,7 +3,6 @@ import "../style/Recipe_Instructions.css"
 const Recipe_Instructions = () => {
     return (
         <>
-        <div className="container_instruction">
             <h1 className="instruction-title">Instructions</h1>
             <div className="container2">
                 <div className="num">1</div>
@@ -47,7 +46,6 @@ const Recipe_Instructions = () => {
                     Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for up to 5 days.
                 </label>
             </div>
-        </div>
         </>
     );
 };

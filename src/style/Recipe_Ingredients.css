@@ -1,25 +1,105 @@
-.container_ingredient {
+.recipe {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.sidebar_menu {
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    margin-left: 18%;
-    width: 901px;
+    height: 500px;
+    width: 200px;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.icon {
+    color: #f2994a;
+    width: 27.09px;
+    height: 25.14px;
+    margin-right: 0.8rem;
+}
+
+.icon-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    margin-bottom: 0.25rem;
+}
+
+.icon-time {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f2994a;
+}
+
+.sides-content {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.icon1 {
+    width: 27.09px;
+    height: 25.14px;
+    color: #4f4f4f;
+    margin-right: 0.8rem;
+}
+
+/* .icon-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    margin-bottom: 0.25rem;
+} */
+
+.icon1-time {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333;
 }
 
 .ingredients {
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 24px;
     line-height: 32px;
     color: #333;
     margin-bottom: 2rem;
+}
+
+.cracker {
+    margin-bottom: 2.3rem;
 }
 
 .sub_ingred {
     font-family: "Playfair Display";
     font-style: italic;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 24px;
     color: #333;
     margin-bottom: 2rem;
@@ -28,14 +108,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 816px;
 }
 
-
 .need {
-    /* display: flex;
-    flex-direction: row; */
-    line-height: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 .check {
@@ -48,27 +125,93 @@
 }
 
 .details {
-    font-size: 20px;
+    color: #333;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    width: 554px;
+    padding-bottom: 0.8rem;
+}
+
+.cheesecake {
+    margin-bottom: 2.3rem;
 }
 
 @media (max-width: 375px) {
 
-    .container_ingredient {
-        display: flex;
-        margin-top: 15px;
+    .recipe {
+        flex-direction: column;
+    }
+
+    .sidebar_menu {
+        background: none;
+        box-shadow: none;
+        flex-direction: row;
+        border-radius: unset;
+        flex-wrap: wrap;
+        height: unset;
+        width: unset;
+    }
+
+    .side-content {
+        margin: 0 1.5rem 2rem 0;
+    }
+
+    .icon {
+        font-size: 1.5em!important;
+        margin-right: 0.5rem;
+    }
+    
+    .icon-desc {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .icon-time {
+        width: 100vw;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .sides-content {
+        margin: 0 1.5rem 2rem 0;
+    }
+
+    .icon1 {
+        font-size: 1.5em!important;
+        margin-right: 0.5rem; 
+    }
+
+    .icon1-time {
+        font-size: 10px;
+        line-height: 12px;
     }
 
     .ingredients {
-        width: 643px;
+        margin-bottom: 1rem;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .cracker {
+        margin-bottom: 2.3rem;
     }
 
     .sub_ingred {
-        width: 643px;
+        margin-bottom: 1.5rem;
+        font-size: 16px;
+        line-height: 21px;
     }
 
     .container {
-        width: 643px;
         display: flex;
         flex-direction: column;
+    }
+
+    .details {
+        font-size: 14px;
+        width: 300px;
     }
 }

@@ -38,7 +38,10 @@
 }
 
 html {
-  background-color: #e5e5e5;
+
+  font-family: "Montserrat",sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .container1 {
@@ -47,26 +50,11 @@ html {
   width: 100%;
 }
 
-.containersec {
-  display: flex;
-  flex-direction: row;
-}
-
-.container3 {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (max-width: 375px) {
 
   .container1 {
     display: flex;
-    /* flex-direction: column; */
-  }
-
-  .containersec {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
 }
